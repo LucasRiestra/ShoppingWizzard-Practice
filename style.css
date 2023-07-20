@@ -1,0 +1,812 @@
+@font-face {
+  font-family: "Velocista";
+  src: url("Fonts/Velocista-Demo-FFP.ttf");
+}
+
+.absoluteBox {
+  display: flex;
+  position: absolute;
+  justify-content: left;
+  z-index: 100;
+  height: 200px;
+  width: 550px;
+}
+
+ * {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  font-family: 'Lato', sans-serif;
+}
+
+.contenedor {
+  display: grid;
+  background-color: gray;
+}
+
+
+.profilelight,
+.addresslight,
+.shippinglight,
+.finishlight {
+  color: #00cc00;
+  animation: alternate;
+  position: relative;
+  animation-name: movimiento;
+  animation-duration: 4s repeat 20;
+}
+
+@keyframes movimiento {
+  0% {
+    color: green;
+  }
+
+  15% {
+    color: #009400;
+  }
+
+  25% {
+    color: #00cc00;
+  }
+
+  40% {
+    color: #009400;
+  }
+
+  50% {
+    color: #069d06;
+  }
+
+  60% {
+    color: #009400;
+  }
+
+  75% {
+    color: #0fcc0f;
+
+  }
+
+  80% {
+    color: #21e821;
+  }
+
+  100% {
+    color: #18ec18;
+  }
+}
+
+/*__________________________________________________________________________________PRODUCT______________________________________________________________________________________*/
+h1 {
+  background-color: #242424;
+  font-weight: bold;
+  font-size: 70px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-top: 10px;
+  color: #ebebeb;
+  font-family: "Velocista";
+  text-shadow: 2px 2px 0.5px #00aed1;
+}
+
+h1:hover {
+  color: white;
+}
+
+h4 {
+  border-radius: 20px;
+  background-color: #242424;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 60px;
+  color: #ebebeb;
+  text-shadow: 2px 2px 0.5px #00aed1;
+}
+
+h4:hover {
+  color: white;
+}
+
+.velocista {
+
+  font-family: 'velocista';
+  display: flex;
+  position: absolute;
+
+}
+
+
+.grid-product {
+  height: 790px;
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 10% 1fr 30%;
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+  align-self: start;
+  justify-content: center;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.image-1 {
+  grid-column: 1;
+  grid-row: 1;
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  margin-left: 100px;
+  position: relative;
+  box-shadow: 2px 2px 4px #ababab;
+  margin-top: 100px;
+}
+
+.image-1>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.image-2 {
+  grid-column: 1;
+  grid-row: 2;
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  margin-left: 100px;
+  position: relative;
+  box-shadow: 2px 2px 4px #ababab;
+  margin-top: 100px;
+}
+
+.image-2>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-3 {
+  grid-column: 1;
+  grid-row: 3;
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  margin-left: 100px;
+  position: relative;
+  box-shadow: 2px 2px 4px #ababab;
+  margin-top: 100px;
+
+}
+
+.image-3>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-main {
+  grid-column: 2;
+  grid-row: 1 / span 6;
+  height: 550px;
+  width: 550px;
+  align-self: center;
+  justify-self: center;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 2px 2px 4px #ababab;
+  margin-right: 50px;
+}
+
+.image-main>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-main:hover {
+  transform: scale(1.05);
+  transition: transform 1s ease-in-out;
+}
+
+.title-product {
+  grid-column: 3;
+  grid-row: 1;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #e0dfec;
+
+}
+
+.price-product {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.size-product {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.text-color-product {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.color-product {
+  grid-column: 3;
+  grid-row: 5;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+.image-product-black {
+  grid-column: 1;
+  grid-row: 1;
+  width: 75px;
+  height: 75px;
+  background-image: url("assets/ZapatillasNegrasMain.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.image-product-black:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-product-blue {
+  grid-column: 2;
+  grid-row: 1;
+  width: 75px;
+  height: 75px;
+  background-image: url("assets/ZapatillasAzulesMain.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.image-product-blue:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.image-product-green {
+  grid-column: 3;
+  grid-row: 1;
+  width: 75px;
+  height: 75px;
+  background-image: url("assets/ZapatillasVerdesMain.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.image-product-green:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-product {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+.button-buy {
+  font-size: 15px;
+  color: white;
+  background-color: #292929;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px black;
+  height: 50px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.button-buy:active {
+  background-color: #000000;
+}
+
+.selectSize {
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*--------------------------------------------------------------------- REGISTRATION PAGES---------------------------------------------------------------------------------------*/
+h2 {
+  margin-bottom: 20px;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px #d2d0fb;
+}
+
+.page {
+  display: grid;
+  background-color: #f2f2f2;
+  align-items: center;
+  grid-template-columns: 60% 40%;
+  height: 750px;
+  width: 1440px;
+  overflow: auto;
+}
+
+.pagecolumn1 {
+  grid-row: 1/2;
+  grid-column: 1;
+  justify-self: center;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.pagecolumn1 input[type="text"],
+.pagecolumn1 input[type="password"],
+.pagecolumn1 select,
+.pagecolumn1 textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.pagecolumn2 {
+  grid-row: 1/2;
+  grid-column: 2;
+}
+
+
+/*__________________________________________________________________________________NAVBAR______________________________________________________________________________________*/
+
+.navbar {
+  background-color: #242424;
+  padding: 28px;
+  text-align: center;
+  font-size: 30px;
+  color: #ebebeb
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  flex: 1;
+  position: relative;
+}
+
+/*;_______________________________________________________________________________PROFILE______________________________________________________________________________________*/
+.form-grid {
+  box-shadow: 2px 2px 4px #ababab;
+  padding: 10px;
+}
+
+.form-grid label {
+  margin-top: 20px;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  margin-bottom: 10px;
+}
+
+.form-grid input[type="submit"] {
+  margin-top: 10px;
+}
+
+.imgProfile {
+  height: 500px;
+  width: 400px;
+  box-shadow: 7px 7px 7px #ababab;
+}
+
+
+
+/*__________________________________________________________________________________ADRESS______________________________________________________________________________________*/
+.birthday {
+  height: 35px;
+  font-size: 15px;
+}
+
+.formAddress {
+  box-shadow: 2px 2px 4px #ababab;
+  padding: 10px;
+}
+
+.imgAddress {
+  height: 500px;
+  width: 400px;
+  box-shadow: 7px 7px 7px #ababab;
+}
+
+/*__________________________________________________________________________________SHIPPING______________________________________________________________________________________*/
+.shippingForm {
+  box-shadow: 2px 2px 4px #ababab;
+  padding: 10px;
+}
+
+.imgShip {
+  height: 500px;
+  width: 400px;
+  box-shadow: 7px 7px 7px #ababab;
+}
+
+.roundInput {
+  height: 20px;
+  width: 20px;
+}
+
+.selectImage{
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+/*__________________________________________________________________________________FINISH______________________________________________________________________________________*/
+
+.purchase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.purchase-grid>div {
+
+  padding: 10px;
+}
+
+.purchase-title {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+
+  margin-left: 20px;
+}
+
+.purchase-title h2 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.img-purchase {
+  grid-column: 1;
+  grid-row: 2 / span 6;
+  background-image: url("assets/ZapatillasNegrasMain.jpeg");
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+  width: 350px;
+  height: 350px;
+}
+
+.img-purchase.changeImagesBlue {
+  background-image: url("assets/ZapatillasAzulesMain.jpeg");
+}
+
+.img-purchase.changeImagesGreen {
+  background-image: url("assets/ZapatillasVerdesMain.jpeg");
+}
+
+.img-purchase.changeImagesBlack {
+  background-image: url("assets/ZapatillasNegrasMain.jpeg");
+}
+
+.description-purchaseType {
+  grid-column: 2;
+  grid-row: 2;
+  font-weight: bold;
+}
+
+
+.description-purchaseSize {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+
+.description-purchaseColor {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.condition-purchase {
+  grid-column: 2;
+  grid-row: 5;
+  font-size: 15px;
+}
+
+.condition-purchase checkbox {
+  margin-left: 10px
+}
+
+.message-purchase {
+  grid-column: 2;
+  grid-row: 6;
+  font-size: 15px;
+}
+
+.order-grid {
+  text-align: left;
+  font-size: 25px;
+  gap: 30px;
+}
+
+.order-grid>div {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+;
+
+button-buynow {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+.button-buynow-button {
+  font-size: 15px;
+  color: white;
+  background-color: #292929;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px black;
+  height: 50px;
+  width: 100px;
+  margin-bottom: 10px;
+  grid-column: 2;
+  grid-row: 8;
+}
+
+.button-buy:active {
+  background-color: #000000;
+}
+
+
+.gray-line {
+  width: 300px;
+}
+
+
+/*__________________________________________________________________________________COMPLETE______________________________________________________________________________________*/
+
+
+.complete-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.complete-grid>div {
+
+  padding: 10px;
+}
+
+.complete-title {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+
+
+}
+
+.complete-title h2 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+
+  margin-left: 20px;
+}
+
+.img-complete {
+
+  grid-column: 1/3;
+  grid-row: 2 / span 6;
+  background-image: url("assets/ZapatillasNegrasMain.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+  box-shadow: 2px 2px 4px #ababab;
+}
+
+
+.img-complete.chageImagesBlue {
+  background-image: url("assets/ZapatillasAzulesMain.jpeg");
+}
+
+.img-complete.changeImagesGreen {
+  background-image: url("assets/ZapatillaVerdesMain.jpeg");
+}
+
+.img-complete.changeImagesBlack {
+  background-image: url("assets/ZapatillasNegrasMain.jpeg");
+}
+
+order-info-complete {
+  display: flex;
+}
+
+.info-complete {
+  margin-top: 50px;
+}
+
+/*__________________________________________________________________________________FOOTER______________________________________________________________________________________*/
+.footerpage {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  height: 10vh;
+  background-color: #e6e5ff;
+  text-align: center;
+}
+
+.previouspage {
+  justify-content: flex-start;
+}
+
+.copyright {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.footerbutton {
+  font-size: 15px;
+  color: white;
+  background-color: #292929;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px black;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer:active {
+  background-color: #000000;
+}
+
+.footerpageProduct {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  height: 10vh;
+  background-color: #e6e5ff;
+  text-align: center;
+}
+
+.social-media {
+  color: #7a47ae;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  gap: 300px;
+}
+
+
+.social-media2 {
+  display: flex;
+  color: #7a47ae;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.social-media2 div {
+  margin-right: 150px;
+}
+
+.social-media2 h5 {
+  margin: 0;
+}
+
+.instagram:hover{
+  color:black;
+}
+
+.facebook:hover{
+  color:black;
+}
+
+.Twitter:hover{
+  color:black;
+}
+
+.copyright:hover{
+  color:black;
+}
+
+.icons{
+  width: 30px;
+  height: 30px;
+}
+
+/*---------------------responsive-----------------------------------------------------------------------*/
+
+/* Agrega el media query para la medida específica de 640 x 360 píxeles */
+@media screen and (max-width: 640px) {
+
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* Estilos para pantallas con ancho de hasta 640px */
+
+  /* Ejemplo de estilo para reducir el tamaño de fuente del h1 */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Ejemplo de estilo para reducir el tamaño de fuente del texto del footer */
+  footer {
+    font-size: 12px;
+  }
+
+  /* Ejemplo de estilo para ajustar el tamaño de las imágenes en la página */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ejemplo de estilo para hacer que los elementos en la página se ajusten a la pantalla */
+  .maincontainer {
+    padding: 10px;
+  }
+
+  /* Ejemplo de estilo para cambiar el tamaño de las columnas en la página de perfil */
+  .pagecolumn1,
+  .pagecolumn2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Ejemplo de estilo para ajustar los botones de navegación */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  .list-item {
+    font-size: 14px;
+  }
+
+  /* Ejemplo de estilo para cambiar el tamaño del footer */
+  .footerpage,
+  .footerpageProduct {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
